@@ -18,13 +18,26 @@
     <img src="img/coma.png" alt="logo1">
     <p class="koma">Koma Kopi Manual</p>
     </a>
-
-    <div class="navlink">
+    <button class="humberger" id="humberger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="navlink" id="navlink">
     <a href="index.html" class="active">Home</a>
     <a href="contact.html">Contact</a> 
     <a href="menu.html">Menu</a>
     <a href="about.html">About</a>
     </div>
+    <script>
+        const humberger = document.getElementById("humberger");
+        const navlink = document.getElementById("navlink");
+
+        humberger.addEventListener("click", () => {
+            navlink.classList.toggle("show");
+            humberger.classList.toggle("active");
+        });
+    </script>
     </div>
     </nav>
 </head>
