@@ -1,23 +1,30 @@
+*{
+    box-sizing: border-box;
+}
 nav {
     width: 100%;
-    max-width: 1400px;
-    min-height: 35px;
-    display: flex;
-    justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    
+}
+.container {
+    max-width: 1200px;
+    min-height: 35px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .pria{
-    display: block;
-    width: clamp(60px, 8vw, 100px);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-.logo1 img {
+.pria img {
     display: block;
     height: auto;
-    width: 100px !important;
-
+    width: clamp(60px, 8vw, 70px);
 }
 
 .navlink {
