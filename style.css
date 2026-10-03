@@ -1,12 +1,29 @@
 nav {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 35px;
     display: flex;
     justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     
+}
+
+.pria{
+    display: block;
+    width: clamp(60px, 8vw, 100px);
+}
+
+.logo1 img {
+    display: block;
+    height: auto;
+    width: 100px !important;
+
 }
 
 .navlink {
     display: flex;
     gap:2rem;
+    margin: auto;
 }
 
 .navlink a {
