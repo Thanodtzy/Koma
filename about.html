@@ -3,13 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <nav class="navbar">
-    <a href="index.html">home</a>
-    <a href="contact.html">contact</a> 
-    <a href="menu.html">menu</a>
-    <a href="about.html"style="background-color: bisque;">about</a>
+    <title>Coma Cofee manual</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<!-- Nav bar -->
+    <nav class="navbar"">
+    <div class="container">
+    <a class="pria">
+    <img src="img/coma.png" alt="logo1">
+    <p class="koma">Koma Kopi Manual</p>
+    </a>
+    <button class="humberger" id="humberger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="navlink" id="navlink">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a> 
+    <a href="menu.html">Menu</a>
+    <a href="about.html" class="active">About</a>
+    </div>
+    <script>
+        const humberger = document.getElementById("humberger");
+        const navlink = document.getElementById("navlink");
+
+        humberger.addEventListener("click", () => {
+            navlink.classList.toggle("show");
+            humberger.classList.toggle("active");
+        });
+    </script>
+    </div>
     </nav>
+
 </head>
 <body>
     
