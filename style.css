@@ -1,13 +1,20 @@
+/*--------------Nav bar---------------------------*/
 *{
     box-sizing: border-box;
 }
 nav {
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    color:  #5C321D;
+    background-color: #F8EFE3;
+}
+h1, h2, h3, h4 {
+    color: #3A2115;
+}
+p {
+    color: #2B1A12;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     min-height: 35px;
     margin: auto;
 
@@ -48,9 +55,12 @@ nav {
    text-decoration: none;
    color:  #5C321D;
    font-family: 'lato', sans-serif;
-   font-weight: 400;
+   font-weight: 1000;
    letter-spacing: 1px;
    position: relative;
+}
+.navlink a.active {
+    color: #7A4E32;
 }
 
 .navlink a.active::after{
@@ -60,7 +70,7 @@ nav {
     bottom: -7px;
     width: 100%;
     height: 2px;
-    background-color:#5C321D ;
+    background-color:#B98252 ;
 }
 
 .navlink a::after {
@@ -70,12 +80,15 @@ nav {
    bottom: -7px;
    width: 0;
    height: 2px;
-   background-color: #5C321D;
-   transform: translate(-50%);
+   background-color: #B98252;
+   transform: translatex(-50%);
    transition: width 0.3s ease;
 
 }
 
+.navlink a:hover{
+   color: #7A4E32;
+}
 .navlink a:hover::after{
     width: 100%;
 }
@@ -146,3 +159,58 @@ nav {
     .humberger.active span:nth-child(3){
         transform: translateY(-7px) rotate(-45deg);
     }
+
+/*--------------Nav bar---------------------------*/
+
+/*--------------body---------------------------*/
+
+body{
+    background-color: #F3E6D2;
+    margin: 0;  
+}
+.story {
+    min-width: 100%;
+    width: 0;
+    align-items: center;
+    background-color: #FFF9F0;
+    padding: 1rem;
+
+    box-shadow: 10px 6px 30px rgba(0, 0, 0, 0.15);;
+
+}
+
+/*--------------body---------------------------*/
+
+/*--------------Footer---------------------------*/
+
+.container2 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto 1fr;
+
+    max-width: 1300px;
+    min-height: 100px;
+    margin: auto;
+    box-shadow: 2px -1px 3px  rgba(0, 0, 0, 0.15);
+    width: 100%;
+    background-color: #4E4640;
+    color: #F4E8D5;
+}
+
+.img-footer{
+    display: flex;
+    grid-column: 2;
+    flex-direction: column;
+}
+
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.logo2 {
+    display: block;
+    height: auto;
+    width: clamp(60px, 8vw, 70px);
+}
+/*--------------Footer---------------------------*/
