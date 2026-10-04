@@ -169,6 +169,12 @@ body{
     flex-direction: column;
     max-width: 600px;
 }
+.behind p {
+    max-width: 60ch;
+}
+.behind2 p {
+    max-width: 140ch;
+}
 .behind2 {
     display: flex;
     justify-self: center;
@@ -209,11 +215,20 @@ body{
     background-color: #51443B;
     color: #F4E8D5;
 }
+.container2 h3 {
+    color: #F4E8D5;
+    font-size: 15px;
+}
 
 .img-footer{
     display: flex;
     grid-column: 2;
-    flex-direction: column;
+    flex-direction: column;  
+}
+
+.img-footer img{
+    width: clamp(5px, 3vw, 100px);
+    display: flex;
 }
 
 .slogan {
@@ -221,11 +236,13 @@ body{
     align-items: center;
     justify-content: end;
 }
+
 .logo2 {
     display: block;
     height: auto;
-    width: clamp(60px, 8vw, 70px);
+    width: clamp(50px, 20vw, 200px);
 }
+
 /*--------------Footer---------------------------*/
 @media (max-width: 768px){
  .story {
