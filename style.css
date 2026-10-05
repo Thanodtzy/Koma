@@ -244,42 +244,104 @@ body{
 }
 
 /*--------------Footer---------------------------*/
+@media (max-width: 1007px){
+    .story {
+        display: flex;
+        align-items: center;
+        background-color: #FFF9F0;
+        padding: 1rem;
+        flex-direction: column;
+
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+    }
+    .img-story{
+        display: flex;
+        width: 0;
+        justify-content: center;
+        margin: 5vw;
+
+    }
+
+    .behind {
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5;
+    }
+    .behind p{
+        max-width: 75ch;
+    }
+    .behind2 p{
+        max-width: 70ch;
+    }
+    .behind2 {
+        display: flex;
+        align-items: center;
+        background-color: #FFF9F0;
+        padding: 1rem;
+        flex-direction: column;
+
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        text-align: start;        
+    }
+    .behind2 h3 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navlink {
+        grid-column: 3;
+        display: flex;
+        gap:2rem;
+        justify-self: end;
+        margin-right: 3rem;
+    }
+
+
+
+
+}
 @media (max-width: 768px){
- .story {
-    display: flex;
-    align-items: center;
-    background-color: #FFF9F0;
-    padding: 1rem;
-    flex-direction: column;
+    .story {
+        display: flex;
+        align-items: center;
+        background-color: #FFF9F0;
+        padding: 1rem;
+        flex-direction: column;
 
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 
-}
-.img-story{
-    display: flex;
-    width: 0;
-    justify-content: center;
-    margin: 5vw;
+    }
+    .img-story{
+        display: flex;
+        width: 0;
+        justify-content: center;
+        margin: 5vw;
 
-}
+    }
 
-.behind {
-    display: flex;
-    flex-direction: column;
-    line-height: 2.5;
-}
-.behind2 {
-    text-align: start;
-    justify-self: start;
-    padding: 1rem;
-    padding-top: -1rem;
-    line-height: 2.5;
-}
-.behind2 h3 {
-    text-align: center;
-    justify-content: center;
-}
+    .behind {
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5;
+    }
+    .behind2 {
+        display: flex;
+        align-items: center;
+        background-color: #FFF9F0;
+        padding: 1rem;
+        flex-direction: column;
 
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);        
+        text-align: left;
+    }
+    .behind p{
+        max-width: 75ch;
+    }
+    .behind2 p{
+        max-width: 70ch;
+        text-align: left;
+    }
 
     .container {
         position: relative;
