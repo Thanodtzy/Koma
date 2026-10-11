@@ -54,8 +54,11 @@ p {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-family: 'poopins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    margin: 0;
+    font-size: clamp(0.95rem, 1.6vw, 1.35rem);
+    line-height: 1.2;
 }
 
 .navlink {
