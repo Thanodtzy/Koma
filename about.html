@@ -3,32 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coma Cofee manual</title>
-    <!-- Font -->
+    <title>About COMA Coffee</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="pria" href="index.html">
+                <img src="img/coma.png" alt="logo1">
+                <p class="koma">Coma Manual Coffee</p>
+            </a>
+            <button class="humberger" id="humberger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navlink" id="navlink">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html" class="active">About</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- Nav bar -->
-    <nav class="navbar"">
-    <div class="container">
-    <a class="pria">
-    <img src="img/coma.png" alt="logo1">
-    <p class="koma">Koma Kopi Manual</p>
-    </a>
-    <button class="humberger" id="humberger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <div class="navlink" id="navlink">
-    <a href="index.html">Home</a>
-    <a href="contact.html">Contact</a> 
-    <a href="menu.html">Menu</a>
-    <a href="about.html" class="active">About</a>
-    </div>
+    <main class="page-main">
+        <section class="about-hero">
+            <div class="about-copy">
+                <p class="eyebrow">Our story</p>
+                <h1>Three friends. One passion. A coffee culture worth sharing.</h1>
+                <p>COMA Coffee was born from long conversations, curious experiments, and the simple joy of coffee with friends. We believe that great coffee is not only about flavor, but also about the people, stories, and moments behind it.</p>
+                <p>What began as a small habit slowly became a dream: to create a welcoming place where every cup feels personal, warm, and meaningful.</p>
+            </div>
+            <div class="about-visual">
+                <img src="img/story.jpg" alt="COMA story">
+            </div>
+        </section>
+
+        <section class="values-grid">
+            <article class="value-card">
+                <h3>Craft</h3>
+                <p>We take time to brew carefully and intentionally, because every process matters.</p>
+            </article>
+            <article class="value-card">
+                <h3>Community</h3>
+                <p>We believe coffee is best enjoyed together, in conversation, laughter, and calm.</p>
+            </article>
+            <article class="value-card">
+                <h3>Honesty</h3>
+                <p>We keep things simple, genuine, and sincere from beans to brewing style.</p>
+            </article>
+        </section>
+
+        <section class="team-section">
+            <div class="section-heading">
+                <p class="eyebrow">The people behind COMA</p>
+                <h2>Made by friends who love coffee</h2>
+            </div>
+
+            <div class="team-grid">
+                <article class="team-card">
+                    <div class="avatar">A</div>
+                    <h3>Arka</h3>
+                    <p>Roaster & brew explorer</p>
+                </article>
+                <article class="team-card">
+                    <div class="avatar">M</div>
+                    <h3>Miko</h3>
+                    <p>Experience creator</p>
+                </article>
+                <article class="team-card">
+                    <div class="avatar">R</div>
+                    <h3>Raka</h3>
+                    <p>Flavor storyteller</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="quote-box">
+            <p>“To us, coffee is not just a drink. It is a ritual, a memory, and a reason to slow down and enjoy life.”</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container2">
+            <img src="img/coma.png" alt="logo" class="logo2">
+
+            <div class="img-footer">
+                <h3>Customer center</h3>
+
+                <div class="contact-item">
+                    <img src="img/location.jpg" alt="location">
+                    <span>kabupaten bogor, cikaret</span>
+                </div>
+
+                <div class="contact-item">
+                    <img src="img/ig.jpg" alt="phone">
+                    <span>0812-1199-4733</span>
+                </div>
+            </div>
+
+            <h3 class="slogan">Coma Cofee, Three Friends. One Passion. A Cup of Coffee.</h3>
+        </div>
+    </footer>
+
     <script>
         const humberger = document.getElementById("humberger");
         const navlink = document.getElementById("navlink");
@@ -38,18 +120,5 @@
             humberger.classList.toggle("active");
         });
     </script>
-    </div>
-    </nav>
-
-</head>
-<body>
-    
 </body>
-<footer>
-    <img src="" alt="footer">
-    Customer center
-    <br><img src="" alt="wa">0812-1199-4733
-    <img src="img/coma.png" alt="logo">
-    <br>Coma Cofee, Three Friends. One Passion. A Cup of Coffee.
-</footer>
 </html>

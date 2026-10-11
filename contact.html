@@ -3,32 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coma Cofee manual</title>
-    <!-- Font -->
+    <title>Coma Coffee Manual</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="pria" href="index.html">
+                <img src="img/coma.png" alt="logo1">
+                <p class="koma">Coma Manual Coffee</p>
+            </a>
 
-<!-- Nav bar -->
-    <nav class="navbar"">
-    <div class="container">
-    <a class="pria">
-    <img src="img/coma.png" alt="logo1">
-    <p class="koma">Koma Kopi Manual</p>
-    </a>
-    <button class="humberger" id="humberger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <div class="navlink" id="navlink">
-    <a href="index.html">Home</a>
-    <a href="contact.html" class="active">Contact</a> 
-    <a href="menu.html">Menu</a>
-    <a href="about.html">About</a>
-    </div>
+            <button class="humberger" id="humberger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navlink" id="navlink">
+                <a href="index.html">Home</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <section class="contact-hero">
+            <div class="contact-copy">
+                <p class="eyebrow">Let’s brew together</p>
+                <h1>Connect with COMA Coffee</h1>
+                <p>Have a question, want to know more about our coffee, or simply want to say hello? We would love to hear from you.</p>
+                <p>Follow and connect with us to discover our latest brews, stories, and moments worth sharing over a cup.</p>
+            </div>
+
+            <div class="contact-badge">
+                <p class="badge-label">Open every day</p>
+                <h3>08.00 - 22.00</h3>
+                <span>Cabang Cikaret, Bogor</span>
+            </div>
+        </section>
+
+        <section class="contact-grid">
+            <article class="info-card">
+                <h3>Visit us</h3>
+                <p>Kabupaten Bogor, Cikaret</p>
+                <span>Warm place, slow coffee, good stories.</span>
+            </article>
+
+            <article class="info-card">
+                <h3>Call us</h3>
+                <p>0812-1199-4733</p>
+                <span>Fast response for orders and questions.</span>
+            </article>
+
+            <article class="info-card">
+                <h3>Follow us</h3>
+                <p>@comacoffee</p>
+                <span>Fresh updates from the brew bar.</span>
+            </article>
+        </section>
+
+        <section class="social-section">
+            <h2>Find us on social media</h2>
+            <div class="social-list">
+                <a href="#" class="social-item">
+                    <img src="img/ig.jpg" alt="Instagram">
+                    <div>
+                        <strong>Instagram</strong>
+                        <span>@comacoffee</span>
+                    </div>
+                </a>
+
+                <a href="#" class="social-item">
+                    <img src="img/fb.png" alt="Facebook">
+                    <div>
+                        <strong>Facebook</strong>
+                        <span>COMA Coffee</span>
+                    </div>
+                </a>
+
+                <a href="#" class="social-item">
+                    <img src="img/tiktok.png" alt="TikTok">
+                    <div>
+                        <strong>TikTok</strong>
+                        <span>@comacoffee</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container2">
+            <img src="img/coma.png" alt="logo" class="logo2">
+
+            <div class="img-footer">
+                <h3>Customer center</h3>
+
+                <div class="contact-item">
+                    <img src="img/location.jpg" alt="location">
+                    <span>kabupaten bogor, cikaret</span>
+                </div>
+
+                <div class="contact-item">
+                    <img src="img/ig.jpg" alt="phone">
+                    <span>0812-1199-4733</span>
+                </div>
+            </div>
+
+            <h3 class="slogan">Coma Cofee, Three Friends. One Passion. A Cup of Coffee.</h3>
+        </div>
+    </footer>
+
     <script>
         const humberger = document.getElementById("humberger");
         const navlink = document.getElementById("navlink");
@@ -38,29 +130,5 @@
             humberger.classList.toggle("active");
         });
     </script>
-    </div>
-    </nav>
-</head>
-<body>
-    <section class="contactus">
-        <h1>Contact Us</h1>
-        <p>Have a question, want to know more about our coffee, or simply want to say hello?</p>
-        <p>We'd love to hear from you. Follow and connect with COMA Coffee through our social media 
-        to discover our latest brews, stories, and updates.</p>
-        <h4>Come, stay awhile, and share a cup with us</h4>
-        <h3>Find Us On</h3>
-    </section>
-    
-    our social media : <br>
-    <img src="img/ig.jpg" alt="ig"><h1>Instagram</h1>
-    <img src="img/fb.png" alt="fb"><h1>Facebook</h1>
-    <img src="img/tiktok.png" alt="tiktok"><h1>Tiktok</h1>
 </body>
-<footer>
-    <img src="" alt="footer">
-    Customer center
-    <br><img src="" alt="wa">0812-1199-4733
-    <img src="img/coma.png" alt="logo">
-    <br>Coma Cofee, Three Friends. One Passion. A Cup of Coffee.
-</footer>
 </html>
